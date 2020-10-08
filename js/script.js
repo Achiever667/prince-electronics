@@ -6,8 +6,8 @@ function displayContacts(){
 
 }
 
-var windows =document. getElementById('contactimg').addEventListener('click', hideContacts);
+var windows =document.querySelector(' .container').addEventListener('hover', hideContacts);
 function hideContacts(){
-    document.querySelector('footer .container .row .col-sm  p').style.left = 40;
-    // document.querySelector('footer .container .row .col-sm  p').style.background = 'none';
+    document.querySelector('footer .container .row .col-sm  p').style.right = '-240px';
+    document.querySelector('footer .container .row .col-sm  p').style.background = 'transparent';
 }

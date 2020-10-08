@@ -24,9 +24,15 @@ header{
 }
 @media screen and (max-width:600px){
     .navbar button{
-        border:1px solid black;
+        border:1px solid darkred;
+        color: darkred;
     }
+    /* .navbar-toggler-icon img{
+        border: darkred;
+        color: darkred;
+    } */
     .navbar-nav{
+        display: none;
         z-index: 30;
         position: absolute;
         top: 70px;
@@ -73,7 +79,7 @@ header{
         color:#ffffff;
         opacity: 0.8;
         padding: 20px;
-        z-index: 10;
+        z-index: 11;
     }
     .top:hover footer .container .row .col-sm  p{
         display: block;
@@ -92,6 +98,10 @@ header{
 
 }
 
+/* .nav-brand{
+    color: darkred;
+    background: darkred;
+} */
 .nav-link{
     color: black;
     /* background: #ffffff; */
@@ -127,17 +137,30 @@ header{
 {
     width: 100%;
     background-image:linear-gradient(to top, rgb(243, 243, 243), rgba(225, 225, 255, 0.6)); 
-
+    padding-bottom: 50px;
 }
 
 .middle .row{
     /* padding: 100px; */
 }
 .middle .row .col-sm{
-    /* height:100px; */
+    height:150px;
     /* width:500px !important; */
     /* border: 1px solid #434b50; */
     margin: 30px;
+}
+.middle .row .col-sm img{
+    width: 100%;
+    height:100%;
+    /* width:500px !important; */
+    /* border: 1px solid #434b50; */
+    /* margin: 30px; */
+}
+
+.middle .row .col-sm img:hover{
+    -webkit-transform: rotateX(150deg); /* Safari */
+    transform: rotateX(200deg);
+    animation-duration: 3secs;
 }
 .middle .row .col-sm .categoryimg{
     align-self: center;
@@ -152,6 +175,16 @@ footer
 
 footer #footerImg, form{
     margin: 30px;
+    
+}
+footer .footerimg{
+    background:blue;
+    border-radius: 10em;
+}
+
+footer #footerImg:hover{
+    background:blue;
+    border-radius: 1em;
 }
 footer .container .row  .col-sm   #contactimg{
     border: 1px solid blue;
