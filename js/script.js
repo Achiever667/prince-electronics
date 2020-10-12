@@ -6,9 +6,9 @@ function displayContacts(){
 
 }
 
-var windows =document.querySelector(' .container').addEventListener('click', hideContacts);
+var windows =document.getElementById('callimg').addEventListener('click', hideContacts);
 function hideContacts(){
-    document.querySelector('footer .container .row .col-sm  p').style.right = '-240px';
+    document.querySelector('footer .container .row .col-sm  p').style.right = '-165px';
     document.querySelector('footer .container .row .col-sm  p').style.background = 'transparent';
 }
 
